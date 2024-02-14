@@ -1,0 +1,105 @@
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Slab&display=swap');
+* {
+    font-family:'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #84b6f4;
+    margin: 0;
+    padding: 0;
+   height: 90vh;
+}
+.saludo{
+    font-size: 6rem;
+    font-weight: 900;
+
+}
+.saludo > span{
+    animation: glow2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color:#fff;
+        text-shadow: 0 0 12px #edef6a, 0 0 50px #edef6a, 0 0 100px #edef6a;
+    }
+    10% , 90%{
+        color: #696565;
+        text-shadow: none;
+    } 
+}
+.saludo > span:nth-child(2){
+    animation-delay: .2s;
+}
+.saludo > span:nth-child(3){
+    animation-delay: .4s;
+}.saludo > span:nth-child(4){
+    animation-delay: .6s;
+}.saludo > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+.descripcion {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.button a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #d9d7d7;
+}
+@media screen and (max-width:574px) {
+    .saludo{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 1rem;
+
+    }
+    .button a{
+        font-size: .5rem;
+    }
+    
+}
+.descripcion span{
+    text-align  : centers;
+}
+
+
+.descripcion{
+    color:#edef6a ;
+}
+/*estilo para el boton*/
+
+.button button {
+    background-color: #edef6a   ;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position:relative;
+    border-radius: 20px;
+    transition: backgroun-color 0.3s ease-in-out;
+
+}
+
+
+
+.button button a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+}
+
+.button button:hover{
+    background-color: orange;
+    box-shadow: 0 0 10px yellow,0 0 20px yellow, 0 0 30px yellow;
+}
+ 
